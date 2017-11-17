@@ -3,7 +3,7 @@ library(magrittr) ## Mechanism for chaining commands
 library(ggplot2) # For graphics
 library(dplyr)
 
-# WOrking with many files is hectic, so i decided to combine
+# Working with many files is hectic, so i decided to merge
 # my data from January 2015 to  January 2017 into single files
 # for both outcomes and street
 multMerge = function(mypath){
@@ -14,15 +14,24 @@ multMerge = function(mypath){
                                           stringsAsFactors = FALSE)})
    Reduce(function(x,y) {merge(x, y, all = TRUE)}, datalist)
 }
-my_data <- multMerge("/Users/kenmbuki/Desktop/R/outcomes")
-my_data <- multMerge("/Users/kenmbuki/Desktop/R/street")
+all_outcomes_data <- multMerge("/Users/kenmbuki/Desktop/R/outcomes")
+all_street_data <- multMerge("/Users/kenmbuki/Desktop/R/street")
 
+# Write data into single files
+# This is optional
+write.csv(all_outcomes_data, file ="outcomes_file.csv")
+write.csv(all_street_data, file ="street_file.csv")
+
+# Read files
 outcomes <- read.csv("outcomes_file.csv", header = TRUE)
 street <- read.csv("street_file.csv", header = TRUE)
 
-attach(street) # Tell R to be looking at this data frame for columns referenced
+# Tell R to be looking at this data frame for columns referenced
+attach(street) 
 
 summary(street)
+summary(outcomes)
+
 
 # Which is the most common Crime type in West Yokrshire
 library(ggplot2) # You need to load this everytime
