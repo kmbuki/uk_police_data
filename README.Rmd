@@ -1,0 +1,21 @@
+---
+title: "Readme"
+author: "Mbuki"
+date: "17/11/2017"
+output: html_document
+---
+
+# Objectives
+
+# Explore
+• Number of crimes by types
+• Finding the ‘spiders in the web’
+
+
+# Visualize
+• Create a maps and Visualizations
+
+
+# Make sense
+• Find combinations of location, time and circumstances where a specific type of crime is more like
+• Predict occurence of crime by type
