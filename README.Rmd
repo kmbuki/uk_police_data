@@ -1,4 +1,4 @@
-## Data 
+## Data Source
 
 Uk Police provides open data about crime and policing in England, Wales and Northern Ireland.
 
@@ -13,15 +13,20 @@ Before going on with this see:
 https://data.police.uk/ and more specifically check https://data.police.uk/about/
 
 
-## Objectives
+
+
+## The Objectives
 
 ### Explore
 • Number of crimes by types
 • Finding the ‘spiders in the web’
 
 
+
 ### Visualize
 • Create a maps and Visualizations
+
+
 
 
 ### Make sense
