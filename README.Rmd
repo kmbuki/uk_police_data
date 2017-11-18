@@ -1,3 +1,17 @@
+## Data 
+
+Uk Police provides open data about crime and policing in England, Wales and Northern Ireland.
+
+You can download street-level crime, outcome, and stop and search data in clear and simple CSV format.
+
+You can also download data on police activity, and a range of data collected under the police annual data requirement (ADR) including arrests and 101 call handling.
+
+All the data on this site is made available under the Open Government Licence v3.0.
+
+Before going on with this see: 
+
+https://data.police.uk/ and more specifically check https://data.police.uk/about/
+
 
 ## Objectives
 
